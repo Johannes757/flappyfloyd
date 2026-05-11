@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EISENHAMMER | Official Links</title>
+    <meta
+      name="description"
+      content="Official EISENHAMMER links: SoundCloud, Spotify, TikTok, and Apple Music."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <img
+        class="logo"
+        src="assets/eisenhammer-logo.png"
+        alt="EISENHAMMER logo"
+        onerror="this.style.display='none';document.querySelector('.logo-fallback').style.display='block';"
+      />
+      <h1 class="logo-fallback" style="display: none">EISENHAMMER</h1>
+
+      <p class="tagline">Industrial force. Heavy pulse.</p>
+
+      <nav class="links" aria-label="EISENHAMMER music links">
+        <a href="https://soundcloud.com/eisenhammer" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+        <a href="https://open.spotify.com/artist/1WNIVCDS5e6TSMcnAw5HQz" target="_blank" rel="noopener noreferrer">Spotify</a>
+        <a href="https://www.tiktok.com/@_eisenhammer_" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://music.apple.com/za/artist/eisenhammer/1393681735" target="_blank" rel="noopener noreferrer">Apple Music</a>
+      </nav>
+
+      <footer>© <span id="year"></span> EISENHAMMER</footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
